@@ -1,0 +1,543 @@
+
+*{
+    box-sizing: border-box;
+}
+
+*::before, *::after{
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------- Barra de navegación ---------- */
+
+.container{
+    max-width: 1600px !important;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.navbar, .navbar-expand-lg{
+    background-color: #24631d !important;
+}
+
+/* LOGO navbar */
+.logo{
+    display: flex;
+}
+.logo__img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 3px #fec801;
+    margin: 2px 0;
+}
+
+.logo__brand{
+    width: auto;
+    text-align: center;
+    margin-left: 5px;
+    padding: 10px 5px 0;
+}
+
+.navbar_logo{
+    color: #fec801;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar_logo::after{
+    content:"San Rafael";
+    font-size: 18px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+/* LINKS NAVEGACION */
+.nav_link{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-item{
+    margin-top: 10px;
+}
+
+.nav_link:hover{
+    color: #fec801;
+}
+
+.nav_link:focus{
+    color: #fec801;
+}
+
+.navbar-toggler{
+    color: whitesmoke !important;
+}
+
+/* ---------- Header con Carrusel ---------- */
+
+.header{
+    height: 80vh;
+}
+
+.carousel{
+    height: 80vh;
+    position: relative;
+}
+
+.carousel-item img{
+    height: 80vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.img2{
+    object-position: 30%;
+}
+
+.img3{
+    object-position: 65%;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    z-index: 200 !important;
+}
+
+.carousel-inner-info{
+    position: absolute;
+    z-index: 100;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner__titles{
+    text-align: center;
+    margin: 100px 0 25px;
+}
+
+.inner__titles h1{
+    font-size: 5.5rem;
+    color: #fec801;
+    font-weight: bold;
+}
+.inner__titles h2{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    margin-top: -20px;
+}
+
+.inner__paragraph{
+    text-align: center;
+    padding: 20px 50px;
+    font-size: 1.8rem;
+    color: whitesmoke;
+}
+
+.inner__cta a{
+    background-color: #24631d;
+    color: white;
+    font-weight: bold;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 24px;
+    font-size: 1.5rem;
+}
+
+.inner__cta a:hover{
+    background-color: #194414;
+}
+
+/* ---------- Sección Nosotros ---------- */
+
+.quienes-somos{
+    padding: 30px 0;
+}
+
+.que-ofrecemos{
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.nosotros__container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nosotros__title{
+    font-size: 2.3rem;
+    text-align: center;
+    color: #24631d;
+    width: 300px;
+    margin: 0 auto 5px;
+}
+
+hr{
+    width: 150px;
+    margin: auto !important;
+    border: 3px solid #fec801 !important;
+    margin-bottom: 15px !important;
+}
+
+.nosotros p{
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.foto__container{
+    width: 100%;
+}
+
+.foto__container img{
+    width: 100%;
+}
+
+/* ---------- Seccion Servicios ---------- */
+
+.servicios__title{
+    text-align: center;
+    font-size: 2.3rem;
+    color: #24631d;
+}
+
+.sub__titile{
+    text-align: center;
+    font-size: 30px;
+    color: #fec801;
+}
+
+.crataegus{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cards__container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    border: 1px solid #c5c5c5;
+    margin: 20px 5px;
+    box-shadow: 0px 0px 12px 5px #69696989;
+    width: 380px !important;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body ul{
+    flex-grow: 1;
+}
+
+.card:hover{
+    background-color: rgba(205, 205, 205, 0.195);
+}
+
+ .card img{
+    height: 255px;
+    object-position: 50% 50%;
+    object-fit: cover;
+} 
+
+.card h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #24631d;
+    margin: 15px 0 20px;
+}
+
+.card li{
+    font-size: 20px;
+}
+
+.card h4{
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    color: #fec801;
+}
+
+.card span{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* ---------- Seccion Contacto ---------- */
+.contacto__title{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cont__title{
+    color: #24631d;
+}
+
+form{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 100%;
+    margin-top: 15px !important;
+    padding: 5px;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+}
+
+label{
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+select{
+    width: 100%;
+    margin: 0px 0 10px !important;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+textarea{
+    width: 100%;
+    margin: 15px 0 5px !important;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contacto__p{
+    color: #828282;
+    width: 100%;
+}
+
+.contacto__btn{
+    background-color: #fec801;
+    border: none !important;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.contacto__btn:hover{
+    background-color: #dcad02;
+}
+
+/* ---------- Footer ---------- */
+.footer__container{
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+}
+.footer{
+    width: 100%;
+    height: 90px;
+    background-color: #24631d;
+}
+
+.footer__title{
+    width: 100px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10px;
+
+}
+
+.title__perenne{
+    font-size: 18px;
+    text-align: center;
+}
+
+h5{
+    font-size: 14px !important;
+    text-align: center;
+}
+
+.footer__logo{
+    width: 80px;
+    height: inherit;
+    display: flex;
+}
+
+.logo__img{
+    margin: 0 auto;
+    align-self: center;
+}
+
+.footer__contacto{
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-right: 10px;
+}
+
+.footer__contacto h4{
+    color: whitesmoke;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+}
+
+i{
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+i:hover{
+    font-size: 33px;
+    color: #fec801;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* @media (min-width: 700px){
+    .header, .carousel{
+        height: 95vh;
+    }
+    
+    .carousel-item img{
+        height: 95vh;
+    }
+
+    .inner__titles h1{
+        margin-top: -100px;
+    }
+
+    .inner__paragraph{
+        margin-top: -30px;
+    }
+} */
+
+
+@media (min-width: 990px) {
+    /* -- Barra de navegacion -- */
+    .nav-item{
+        margin-top: 0;
+    }
+
+    .nav_link{
+        margin-left: 30px;
+    }
+
+    /* -- Carrusel -- */
+    .img2{
+        object-position: top;
+    }
+
+    .carousel-inner-info{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .inner__titles h1{
+        font-size: 10rem;
+        margin-top: -200px;
+    }
+
+    .inner__titles h2{
+        font-size: 2rem;
+    }
+
+    .inner__paragraph{
+        font-size: 2.3rem;
+    }
+
+    /* -- Seccion Nosotros -- */
+    .quienes-somos, .que-ofrecemos{
+        width: 55%;
+        margin: 50px auto;
+        font-size: 4rem;
+    }
+
+    .quienes-somos h2, .que-ofrecemos h2{
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .quienes-somos p, .que-ofrecemos p{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .foto__container img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    /* -- Seccion Servicios -- */
+    .cards__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .crataegus{
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .card{
+        width: 450px !important;
+        height: 800px !important;
+    }
+
+    .crataegus .card{
+        height: 645px !important;
+    }
+
+    /* -- Seccion Contacto -- */
+    form{
+        width: 55%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contacto__nombre, .contacto__apellido{
+        width: 49%;
+    }
+    .contacto__apellido{
+        margin-left: auto;
+    }
+
+    .contacto__telefono{
+        width: 100%;
+    }
+
+    .contacto__btn{
+        width: 100%;
+    }
+}
+

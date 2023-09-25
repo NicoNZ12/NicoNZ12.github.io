@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="assets/logo.jpg" type="image/x-icon">
+  <title>Perenne | CaC integrador</title>
+</head>
+
+<body>
+
+  <!------------- Barra de navegación -------------->
+  <section class="nav-bar">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="logo">
+          <img class="logo__img" src="assets/logo.jpg" alt="perenne logo">
+          <div class="logo__brand">
+            <a class="navbar_logo" href="#inicio">Perenne</a>
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav_link inicio" href="#inicio">Incio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_link" href="#">Trabajos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+  <!-------------- Header con Carrusel ------------->
+  <header class="header" id="inicio">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-inner-info">
+          <div class="inner__titles">
+            <h1>Perenne</h1>
+            <h2>Servicio de Jardín</h2>
+          </div>
+          <div class="inner__paragraph">
+            <p>¡Nosotros nos aseguramos de que el cambio sea verdadero!</p>
+          </div>
+          <div class="inner__cta">
+            <a href="#servicios">Más Información</a>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="assets/C1.png" class="d-block w-100 img1" alt="primer imagen del carrusel">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/C2.png" class="d-block w-100 img2" alt="segunda imagen del carrusel">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/C3.png" class="d-block w-100 img3" alt="tercera imagen del carrusel">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <!------------ Sección Nosotros ------------>
+  <section class="nosotros" id="nosotros">
+    <div class="nosotros__container">
+      <div class="quienes-somos">
+        <h2 class="nosotros__title">¿Quiénes somos?</h2>
+        <hr>
+        <p>Somos un equipo especializado en el mantenimiento y cuidado de espacios verdes atendiendo a las necesidades botánicas y estéticas que sus dueños pretenden.</p>
+        <div class="foto__container">
+          <img src="assets/grupo.jpeg" alt="">
+        </div>
+      </div>
+      <div class="que-ofrecemos">
+        <h2 class="nosotros__title">¿Qué ofrecemos?</h2>
+        <hr>
+        <p>Brindamos un servicio mensual para garantizar su correcta planificación en tiempo y forma según la estación del año. Ofrecemos compromiso, calidad y profesionalismo</p>
+      </div>
+    </div>
+  </section>
+
+  <!------------ Sección Servicios ------------>
+
+  <section class="servicios" id="servicios">
+    <h2 class="servicios__title">NUESTROS PLANES</h2>
+    <h3 class="sub__titile">Servicio de Jardinería</h3>
+    <div class="cards__container jardineria">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/plan1.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>PLAN 1</h3>
+          <ul>
+            <li>Corte de césped</li>
+            <li>Mantenimiento de canteros</li>
+            <li>Recolección de hojas</li>
+            <li>Limpieza de acequias</li>
+          </ul>
+          <h4>Frecuencia</h4>
+          <span>2 visitas mensuales</span>
+          <span>3 visitas mensuales</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="assets/plan2.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>PLAN 2</h3>
+          <ul>
+            <li>Corte de césped</li>
+            <li>Mantenimiento de canteros</li>
+            <li>Recolección de hojas</li>
+            <li>Limpieza de acequias</li>
+            <li>Control sanitario y aplicación de plaguicida</li>
+            <li>Poda de arbustos y flores</li>
+          </ul>
+          <h4>Frecuencia</h4>
+          <span>2 visitas mensuales</span>
+          <span>3 visitas mensuales</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="assets/plan3.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>PLAN 3</h3>
+          <ul>
+            <li>Corte de césped</li>
+            <li>Mantenimiento de canteros</li>
+            <li>Recolección de hojas</li>
+            <li>Limpieza de acequias</li>
+            <li>Control sanitario y aplicación de plaguicida</li>
+            <li>Poda de arbustos y flores</li>
+            <li>Mantenimiento de enredaderas</li>
+            <li>Recorte de cercos vivos</li>
+            <li>Fertilización de canteros</li>
+            <li>Poda de apertura y formación de árboles</li>
+          </ul>
+          <h4>Frecuencia</h4>
+          <span>2 visitas mensuales</span>
+          <span>3 visitas mensuales</span>
+        </div>
+      </div>
+    </div>
+    <div class="crataegus">
+      <h3 class="sub__titile">Mantenimiento de Crataegus</h3>
+    </div>
+    <div class="cards__container crataegus">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/plan2.1.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>PLAN 1</h3>
+          <ul>
+            <li>Corte de cerco</li>
+            <li>Recolección de ramas</li>
+            <li>Limpieza de hojas</li>
+          </ul>
+          <h4>Frecuencia</h4>
+          <span>2 visitas mensuales</span>
+          <span>3 visitas mensuales</span>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="assets/plan2.2.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>PLAN 2</h3>
+          <ul>
+            <li>Corte de cerco</li>
+            <li>Recolección de ramas</li>
+            <li>Limpieza de hojas</li>
+            <li>Control sanitario</li>
+            <li>Fertilización</li>
+          </ul>
+          <h4>Frecuencia</h4>
+          <span>2 visitas mensuales</span>
+          <span>3 visitas mensuales</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------ Sección Trabajos ------------>
+
+  <!------------ Sección Contacto ------------>
+  <section class="contacto" id="contacto">
+    <h2 class="contacto__title"><span class="cont__title">¡Contactanos</span> para brindarte una mejor asistencia!</h2>
+    <form action="https://formsubmit.co/nuneznicolas582@gmail.com" method="POST">
+      <div class="contacto__nombre">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+      </div>
+      <div class="contacto__apellido">
+        <input type="text" name="apellido" placeholder="Apellido" required>
+      </div>
+      <div class="contacto__telefono">
+        <input type="tel" name="telefono" placeholder="Teléfono" required>
+      </div>
+      <label for="planes">Elige un plan: </label>
+      <select name="plan" id="planes" class="contacto__planes" required>
+        <optgroup label="Jardinería">
+          <option value="plan1">Plan 1</option>
+          <option value="plan2">Plan 2</option>
+          <option value="plan3">Plan 3</option>
+        </optgroup>
+        <optgroup label="Crataegus">
+          <option value="plan1">Plan 1</option>
+          <option value="plan2">Plan 2</option>
+        </optgroup>
+      </select>
+      <label for="visitas">Cantidad de visitas: </label>
+      <select name="visitas" id="visitas" class="contacto__visitas" required>
+        <option value="2visitas">2 visitas mensuales</option>
+        <option value="3visitas">3 visitas mensuales</option>
+      </select>
+      <textarea name="comentario" cols="30" rows="5" placeholder="Algo para comentarnos?" required></textarea>
+      <p class="contacto__p">Recuerda indicarnos los m<sup>2</sup> de tú jardín.</p>
+      <button type="submit" class="contacto__btn">Enviar</button>
+    </form>
+  </section>
+
+  <!------------ Footer ------------>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__title">
+        <h4 class="title__perenne">&copy;PERENNE</h4>
+        <h5>2023</h6>
+      </div>
+      <div class="footer__logo">
+        <img class="logo__img" src="assets/logo.jpg" alt="perenne logo">
+      </div>
+      <div class="footer__contacto">
+        <h4>Contacto</h3>
+          <a href=" https://wa.me/2604340967" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/perenne.sanrafael" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/4e0f4a3ed7.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
