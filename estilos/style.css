@@ -209,12 +209,18 @@ hr{
     text-align: center;
     font-size: 2.3rem;
     color: #24631d;
+    margin-bottom: 30px;
 }
 
 .sub__titile{
     text-align: center;
     font-size: 30px;
     color: #fec801;
+}
+
+.sub__titile::after, .sub__titile::before{
+    content: "-";
+    color: #24631d;
 }
 
 .crataegus{
@@ -405,7 +411,7 @@ h5{
 
 .footer__contacto h4{
     color: whitesmoke;
-    font-size: 16px;
+    font-size: 18px;
     width: 100px;
     text-align: center;
 }
