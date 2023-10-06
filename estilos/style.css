@@ -9,7 +9,12 @@
 }
 
 /* ---------- Barra de navegación ---------- */
-
+.nav-bar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
 .container{
     max-width: 1600px !important;
 }
@@ -85,26 +90,27 @@
 /* ---------- Header con Carrusel ---------- */
 
 .header{
-    height: 80vh;
+    height: 95vh;
+    /* margin-top: 86px; */
 }
 
 .carousel{
-    height: 80vh;
+    height: 95vh;
     position: relative;
 }
 
 .carousel-item img{
-    height: 80vh;
+    height: 95vh;
     object-fit: cover;
     filter: brightness(50%);
 }
 
 .img2{
-    object-position: 30%;
+    object-position: 25%;
 }
 
 .img3{
-    object-position: 65%;
+    object-position: 70%;
 }
 
 .carousel-control-next, .carousel-control-prev{
@@ -122,7 +128,7 @@
 
 .inner__titles{
     text-align: center;
-    margin: 100px 0 25px;
+    margin: 200px 0 35px;
 }
 
 .inner__titles h1{
@@ -158,16 +164,13 @@
 }
 
 /* ---------- Sección Nosotros ---------- */
-
-.quienes-somos{
-    padding: 30px 0;
+.nosotros{
+    margin-top: 50px;
 }
 
-.que-ofrecemos{
-    margin-top: 40px;
-    padding-bottom: 40px;
+.quienes-somos p{
+    padding: 0 28px;
 }
-
 
 .nosotros__container{
     width: 90%;
@@ -204,12 +207,14 @@ hr{
 }
 
 /* ---------- Seccion Servicios ---------- */
-
+.servicios{
+    margin-top: 50px;
+}
 .servicios__title{
     text-align: center;
     font-size: 2.3rem;
     color: #24631d;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .sub__titile{
@@ -281,6 +286,11 @@ hr{
     color: #fec801;
 }
 
+.card h5{
+    font-size: 21px !important;
+    color: #194414;
+}
+
 .card span{
     font-size: 20px;
     display: block;
@@ -288,14 +298,43 @@ hr{
     margin: 5px 0;
 }
 
+/* ----------- Seccion Trabajos ---------- */
+.trabajos{
+    margin-top: 50px;
+}
+
+.articles__trabajos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trabajos__title{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.trabajos article{
+    width: 360px;
+    height: 460px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
 /* ---------- Seccion Contacto ---------- */
+.contacto{
+    margin-top: 50px;
+}
+
 .contacto__title{
     text-align: center;
     margin-top: 15px;
+    font-size: 2.3rem;
 }
 
-.cont__title{
-    color: #24631d;
+.title{
+    color: #24631d;;
 }
 
 form{
@@ -466,7 +505,10 @@ i:hover{
         width: 100%;
         justify-content: center;
     }
-
+    
+    .inner__titles{
+        margin: 285px 0 35px;
+    }
     .inner__titles h1{
         font-size: 10rem;
         margin-top: -200px;
@@ -481,9 +523,17 @@ i:hover{
     }
 
     /* -- Seccion Nosotros -- */
+    .nosotros{
+        margin-top: 10px;
+    }
+
+    .nosotros__container{
+        display: flex;
+        flex-direction: row;
+    }
     .quienes-somos, .que-ofrecemos{
         width: 55%;
-        margin: 50px auto;
+        margin: 50px auto 5px;
         font-size: 4rem;
     }
 
@@ -498,9 +548,11 @@ i:hover{
     }
 
     .foto__container img{
-        width: 100%;
-        height: 500px;
+        width: 50%;
+        height: 350px;
         object-fit: cover;
+        display: block;
+        margin: 0 auto;
     }
 
     /* -- Seccion Servicios -- */
@@ -524,6 +576,13 @@ i:hover{
         height: 645px !important;
     }
 
+    /* -- Seccion Trabajos -- */
+    .articles__trabajos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     /* -- Seccion Contacto -- */
     form{
         width: 55%;
@@ -545,5 +604,5 @@ i:hover{
     .contacto__btn{
         width: 100%;
     }
-}
+} 
 
