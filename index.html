@@ -228,18 +228,19 @@
   <!------------ Sección Contacto ------------>
   <section class="contacto" id="contacto">
     <h2 class="contacto__title"><span class="title">¡Contactanos</span> para brindarte una mejor asistencia!</h2>
-    <form action="..." method="POST">
+    <form name="formulario" id="form" action="">
       <div class="contacto__nombre">
-        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
       </div>
       <div class="contacto__apellido">
-        <input type="text" name="apellido" placeholder="Apellido" required>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
       </div>
       <div class="contacto__telefono">
-        <input type="tel" name="telefono" placeholder="Teléfono" required>
+        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" required>
       </div>
       <label for="planes">Elige un plan: </label>
       <select name="plan" id="planes" class="contacto__planes" required>
+        <option value="elegir">Selecciona un plan:</option>
         <optgroup label="Jardinería">
           <option value="plan1">Plan 1</option>
           <option value="plan2">Plan 2</option>
@@ -250,14 +251,15 @@
           <option value="plan2">Plan 2</option>
         </optgroup>
       </select>
-      <label for="visitas">Cantidad de visitas: </label>
+      <label class="label-visitas" for="visitas">Cantidad de visitas: </label>
       <select name="visitas" id="visitas" class="contacto__visitas" required>
+        <option value="elegir">Selecciona la cantidad de visitas:</option>
         <option value="2visitas">2 visitas mensuales</option>
         <option value="3visitas">3 visitas mensuales</option>
       </select>
-      <textarea name="comentario" cols="30" rows="5" placeholder="Algo para comentarnos?" required></textarea>
+      <textarea name="comentario" cols="30" rows="5" placeholder="Algo para comentarnos?"></textarea>
       <p class="contacto__p">Recuerda indicarnos los m<sup>2</sup> de tú jardín.</p>
-      <button type="submit" class="contacto__btn">Enviar</button>
+      <button type="submit" onclick="enviarForm()" class="contacto__btn">Enviar</button>
     </form>
   </section>
 
@@ -302,6 +304,7 @@
 
   <script src="https://kit.fontawesome.com/4e0f4a3ed7.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="logica.js"></script>
 </body>
 
 </html>

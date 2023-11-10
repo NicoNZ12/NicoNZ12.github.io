@@ -361,12 +361,14 @@ select{
     padding: 5px;
 }
 
+
 textarea{
     width: 100%;
     margin: 15px 0 5px !important;
     border: 1px solid #a7a7a7;
     border-radius: 5px;
     padding: 5px;
+    resize: none;
 }
 
 .contacto__p{
@@ -388,6 +390,7 @@ textarea{
 .contacto__btn:hover{
     background-color: #dcad02;
 }
+
 
 /* ---------- Footer ---------- */
 .footer__container{
